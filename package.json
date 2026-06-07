@@ -1,0 +1,15 @@
+{
+  "name": "srijau-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Srijau — platform karier hijau untuk perempuan Indonesia.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}
