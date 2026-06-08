@@ -20,6 +20,7 @@ export default defineConfig({
         expertFalasifah: resolve(__dirname, 'expert-falasifah.html'),
         eduEnergiKomunitas: resolve(__dirname, 'educational-energi-komunitas.html'),
         eduPltsSimulasi: resolve(__dirname, 'educational-plts-simulasi.html'),
+        eduPengantarGreenJobs: resolve(__dirname, 'educational-pengantar-green-jobs.html'),
       },
     },
   },

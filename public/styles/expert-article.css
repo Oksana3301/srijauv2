@@ -39,3 +39,8 @@
   .xhero__grid{ grid-template-columns:1fr; gap:32px; }
   .xhero__media{ max-width:380px; }
 }
+@media (max-width:768px){
+  .xhero{ padding-top:clamp(96px,20vw,118px); }
+  .xhero__media{ max-width:300px; max-height:52vh; margin-inline:auto; }
+  .xhero__name{ font-size:clamp(38px,10vw,56px); }
+}

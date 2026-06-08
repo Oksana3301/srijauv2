@@ -75,6 +75,7 @@
 .jobcat__list li{ font-size:14px; line-height:1.45; color:var(--ink-70); padding-left:18px; position:relative; }
 .jobcat__list li::before{ content:""; position:absolute; left:0; top:9px; width:6px; height:6px; border-radius:50%; background:var(--forest); }
 @media (max-width:680px){ .jobs4{ grid-template-columns:1fr; } }
+.jobcat__p{ font-size:14px; line-height:1.5; color:var(--ink-70); margin-top:10px; }
 
 .note-highlight{ background:var(--sand); border-radius:14px; padding:22px 26px; margin:30px 0; font-size:15.5px; line-height:1.6; color:var(--charcoal); }
 .note-highlight strong{ color:var(--wine); }
@@ -103,6 +104,12 @@
 .refs__inner li{ font-size:13px; line-height:1.5; color:var(--ink-55); }
 
 @media (prefers-reduced-motion:reduce){ .refs__body{ transition:none; } }
+@media (max-width:768px){
+  .edu-hero{ padding-top:clamp(96px,20vw,118px); }
+  .edu-hero__media{ aspect-ratio:16/10; max-height:46vh; margin-top:clamp(22px,5vw,32px); }
+  .edu-hero__title{ font-size:clamp(30px,8vw,46px); }
+  .edu-hero__sub{ font-size:16px; }
+}
 
 /* article CTA */
 .article-cta{ max-width:720px; margin:clamp(56px,7vw,88px) auto 0; padding:clamp(40px,5vw,60px) clamp(28px,4vw,52px); background:var(--ivory); border:1px solid var(--line); border-radius:18px; text-align:center; }

@@ -493,6 +493,11 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,te
 /* hero media tweak */
 .bizhero__media{ object-position:center; }
 .bizhero__media--portrait{ aspect-ratio:3/4; max-height:640px; }
+@media (max-width:768px){
+  .bizhero__media{ aspect-ratio:16/10; max-height:48vh; }
+  .bizhero__media--portrait{ aspect-ratio:4/5; max-height:52vh; }
+  .bizhero .biz-hero__title{ font-size:clamp(30px,8vw,46px); }
+}
 
 /* media-fit rule */
 .prod__media{ object-position:center; }

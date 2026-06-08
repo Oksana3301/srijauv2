@@ -30,6 +30,7 @@
 <script>document.documentElement.classList.add('js');</script>
 <link rel="stylesheet" href="/styles/content.css" />
 <link rel="stylesheet" href="/styles/suaramu.css" />
+<link rel="stylesheet" href="/styles/waitlist.css" />
 </head>
 <body>
 
@@ -134,7 +135,16 @@
       <p class="lead">Ulasan mendalam yang memetakan peluang hijau secara konkret &mdash; dari konsep hingga langkah pertama.</p>
     </div>
     <div class="expert-grid">
-      <a href="/educational-energi-komunitas" class="xcard reveal" data-d="1" data-cursor>
+      <a href="/educational-pengantar-green-jobs" class="xcard reveal" data-d="1" data-cursor>
+        <picture><source srcset="/images/edu-greenjobs-hero.webp" type="image/webp" /><img class="xcard__media xcard__media--wide" src="/images/edu-greenjobs-hero.jpg" alt="Pekerja muda di sektor energi hijau" width="1600" height="1067" loading="lazy" decoding="async" /></picture>
+        <div class="xcard__body">
+          <div class="xcard__meta"><span class="xcard__badge">Pengantar</span><span class="xcard__time">6 menit baca</span></div>
+          <h3 class="xcard__title-lg">Green jobs di Indonesia, lebih dari sekadar tren</h3>
+          <p class="xcard__desc">Karier bermakna sambil menjaga bumi bukan lagi angan. Kenali apa itu green jobs dan mengapa peluangnya nyata di Indonesia.</p>
+          <span class="xcard__cta">Baca <span class="arr">&rarr;</span></span>
+        </div>
+      </a>
+      <a href="/educational-energi-komunitas" class="xcard reveal" data-d="2" data-cursor>
         <picture><source srcset="/images/edu-biogas-hero.webp" type="image/webp" /><img class="xcard__media xcard__media--wide" src="/images/edu-biogas-hero.jpg" alt="Instalasi biogas komunal di desa peternakan" width="1280" height="800" loading="lazy" decoding="async" /></picture>
         <div class="xcard__body">
           <div class="xcard__meta"><span class="xcard__badge">Energy Access</span><span class="xcard__time">7&ndash;9 menit baca</span></div>
@@ -143,7 +153,7 @@
           <span class="xcard__cta">Baca <span class="arr">&rarr;</span></span>
         </div>
       </a>
-      <a href="/educational-plts-simulasi" class="xcard reveal" data-d="2" data-cursor>
+      <a href="/educational-plts-simulasi" class="xcard reveal" data-d="3" data-cursor>
         <picture><source srcset="/images/edu-plts-hero.webp" type="image/webp" /><img class="xcard__media xcard__media--wide" src="/images/edu-plts-hero.jpg" alt="Panel surya terpasang di atap bangunan" width="1280" height="960" loading="lazy" decoding="async" /></picture>
         <div class="xcard__body">
           <div class="xcard__meta"><span class="xcard__badge">Energi Surya</span><span class="xcard__time">4 menit baca</span></div>
@@ -191,6 +201,35 @@
 </section>
 
 <!-- ===================== FOOTER ===================== -->
+
+<!-- ===================== WAITLIST (form penutup) ===================== -->
+<section class="section waitlist-sec waitlist-sec--sand" id="waitlist" data-screen-label="Waitlist">
+  <div class="container">
+    <div class="waitlist reveal">
+      <p class="waitlist__k">Waitlist</p>
+      <h2 class="waitlist__h">Terima cerita &amp; wawasan hijau terbaru</h2>
+      <p class="waitlist__sub">Daftar untuk mendapat kabar pertama saat tersedia.</p>
+      <div class="waitlist__card">
+        <form class="waitlist__form js-waitlist" data-asal="content" novalidate>
+          <div class="waitlist__row">
+            <div class="field"><label>Nama</label><input type="text" name="nama" placeholder="Nama" autocomplete="name" /></div>
+            <div class="field"><label>Email</label><input type="email" name="email" required placeholder="nama@email.com" autocomplete="email" /></div>
+          </div>
+          <div class="field"><label>Saya tertarik sebagai</label><select name="minat" required><option value="" disabled selected>Pilih</option><option>Pencari karier hijau</option><option>Ibu &amp; keluarga</option><option>Pelaku usaha</option><option>Lainnya</option></select></div>
+          <p class="waitlist__err"></p>
+          <button type="submit" class="btn btn--wine waitlist__btn" data-cursor>Gabung waitlist <span class="arr">&rarr;</span></button>
+          <p class="waitlist__note">Tanpa spam. Pemberitahuan hanya saat ada kabar penting.</p>
+        </form>
+        <div class="waitlist__done">
+          <div class="waitlist__done-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 class="waitlist__done-h">Terima kasih sudah bergabung.</h3>
+          <p class="waitlist__done-p">Kabar akan dikirim ke email yang didaftarkan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="footer" id="footer">
   <div class="container">
     <div class="footer__grid">
@@ -239,5 +278,6 @@
 
 <script src="/scripts/content.js" defer></script>
 <script src="/scripts/suaramu.js" defer></script>
+<script src="/scripts/waitlist.js" defer></script>
 </body>
 </html>

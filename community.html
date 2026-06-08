@@ -30,6 +30,7 @@
 <script>document.documentElement.classList.add('js');</script>
 <link rel="stylesheet" href="/styles/community.css" />
 <link rel="stylesheet" href="/styles/suaramu.css" />
+<link rel="stylesheet" href="/styles/waitlist.css" />
 </head>
 <body>
 
@@ -259,6 +260,35 @@
 </section>
 
 <!-- FOOTER -->
+
+<!-- ===================== WAITLIST (form penutup) ===================== -->
+<section class="section waitlist-sec waitlist-sec--sand" id="waitlist" data-screen-label="Waitlist">
+  <div class="container">
+    <div class="waitlist reveal">
+      <p class="waitlist__k">Waitlist</p>
+      <h2 class="waitlist__h">Bergabung dengan komunitas perempuan hijau</h2>
+      <p class="waitlist__sub">Daftar untuk mendapat kabar pertama saat tersedia.</p>
+      <div class="waitlist__card">
+        <form class="waitlist__form js-waitlist" data-asal="community" novalidate>
+          <div class="waitlist__row">
+            <div class="field"><label>Nama</label><input type="text" name="nama" placeholder="Nama" autocomplete="name" /></div>
+            <div class="field"><label>Email</label><input type="email" name="email" required placeholder="nama@email.com" autocomplete="email" /></div>
+          </div>
+          <div class="field"><label>Saya tertarik sebagai</label><select name="minat" required><option value="" disabled selected>Pilih</option><option>Pencari karier hijau</option><option>Ibu &amp; keluarga</option><option>Pelaku usaha</option><option>Lainnya</option></select></div>
+          <p class="waitlist__err"></p>
+          <button type="submit" class="btn btn--wine waitlist__btn" data-cursor>Gabung waitlist <span class="arr">&rarr;</span></button>
+          <p class="waitlist__note">Tanpa spam. Pemberitahuan hanya saat ada kabar penting.</p>
+        </form>
+        <div class="waitlist__done">
+          <div class="waitlist__done-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 class="waitlist__done-h">Terima kasih sudah bergabung.</h3>
+          <p class="waitlist__done-p">Kabar akan dikirim ke email yang didaftarkan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="footer" id="footer">
   <div class="container">
     <div class="footer__grid">
@@ -303,5 +333,6 @@
 
 <script src="/scripts/community.js" defer></script>
 <script src="/scripts/suaramu.js" defer></script>
+<script src="/scripts/waitlist.js" defer></script>
 </body>
 </html>
